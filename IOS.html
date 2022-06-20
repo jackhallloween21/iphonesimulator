@@ -1,0 +1,315 @@
+<html><head> 
+  <!--
+            Sarting this thing where I date my codes for future reference
+            Created 9/19/2018
+        --> 
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> 
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet"> 
+  <title>Page Title</title> 
+ </head> 
+ <body> 
+  <div id="phone"> 
+   <div id="camera"> 
+    <div id="lense"></div> 
+   </div> 
+   <div id="screen"> 
+    <!--
+                    Start Apps
+                --> 
+    <application id="weather_app"> 
+     <embed src="https://domagoj-puljic.neocities.org" style="width:75vw;height:75vh;margin:0;"> 
+    </application> 
+    <application id="cal_app" hidden="true"> 
+     <table id="cal" border="0"> 
+      <tbody> 
+       <tr> 
+        <td colspan="7" class="day" id="datetitle"></td> 
+       </tr> 
+       <tr> 
+        <td class="day thd">Sun</td> 
+        <td class="day thd">Mon</td> 
+        <td class="day thd">Tue</td> 
+        <td class="day thd">Wed</td> 
+        <td class="day thd">Thu</td> 
+        <td class="day thd">Fri</td> 
+        <td class="day thd">Sat</td> 
+       </tr> 
+       <tr id="first"> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+       <tr> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+        <td class="day"></td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </application> 
+    <application id="griderly" hidden="true"> 
+     <embed src="https://griderly.neocities.org/" style="width:75vw;height:75vh;margin:0;"> 
+    </application> 
+    <application id="cookie_clicker" hidden="true"> 
+     <div id="cookies">
+       0 Cookies 
+     </div> 
+     <img src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Apps-preferences-web-browser-cookies-icon.png" id="cookie"> 
+    </application> 
+    <application id="recentApps" hidden="true"> 
+     <div id="background_recent"></div> 
+     <div id="currentRecent"></div> 
+    </application> 
+    <application id="dialer" style="background: #EEE;" hidden="true"> 
+     <div id="dialer_scn"></div> 
+     <table id="dialer_pad"> 
+      <tbody> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           1 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           2 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           3 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           4 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           5 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           6 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           7 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           8 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           9 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td> 
+         <div class="dialerBtn">
+           * 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           0 
+         </div></td> 
+        <td> 
+         <div class="dialerBtn">
+           # 
+         </div></td> 
+       </tr> 
+       <tr> 
+        <td colspan="3">CALL</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </application> 
+    <application id="settings" hidden="true"> 
+     <div id="settings_title">
+       Settings 
+     </div> 
+     <div class="settings_gap"></div> 
+     <div class="settings_content"> 
+      <table id="toggles"> 
+       <tbody> 
+        <tr> 
+         <td>Siri</td> 
+         <td><input type="checkbox" class="ios8-switch" id="siri_active" checked=""> <label for="siri_active"></label></td> 
+        </tr> 
+       </tbody> 
+      </table> 
+     </div> 
+     <div class="settings_gap"></div> 
+     <div class="settings_content"> 
+      <a href="https://code.sololearn.com/W8XpSCS9yfra/?ref=app">View Weather Code</a> 
+     </div> 
+     <p class="settings_desc">Please suggest app ideas in the comments</p> 
+    </application> 
+    <application id="brokenSiri" hidden="true"> 
+     <div>
+       Enable Siri in the settings to use this feature 
+     </div> 
+    </application> 
+    <application id="siri" hidden="true"> 
+     <div id="siri_content">
+       What can I help you with? 
+     </div> 
+     <img src="https://thumbs.gfycat.com/VigorousWigglyEel-max-1mb.gif" style="height: 41%; width: 100%;opacity: 0.85;"> 
+    </application> 
+    <application id="browser" hidden="true"> 
+     <div style="height:10vh;display: flex;align-items: center;justify-content: center;background: #FFF;"> 
+      <input type="search" id="searchbar" placeholder="bing.com"> 
+     </div> 
+     <embed src="https://bing.com/search" id="browse" style="width:75vw;height:65vh;margin:0;overflow: auto;"> 
+    </application> 
+    <application id="calculator" hidden="true"> 
+     <div id="calc_scn">
+       0 
+     </div> 
+     <table id="calc_ctrl"> 
+      <tbody> 
+       <tr> 
+        <td class="lightCalc">AC</td> 
+        <td class="lightCalc">+/-</td> 
+        <td class="lightCalc">%</td> 
+        <td class="orangeCalc">÷</td> 
+       </tr> 
+       <tr> 
+        <td class="calcCtrl">7</td> 
+        <td class="calcCtrl">8</td> 
+        <td class="calcCtrl">9</td> 
+        <td class="orangeCalc">×</td> 
+       </tr> 
+       <tr> 
+        <td class="calcCtrl">4</td> 
+        <td class="calcCtrl">5</td> 
+        <td class="calcCtrl">6</td> 
+        <td class="orangeCalc">-</td> 
+       </tr> 
+       <tr> 
+        <td class="calcCtrl">1</td> 
+        <td class="calcCtrl">2</td> 
+        <td class="calcCtrl">3</td> 
+        <td class="orangeCalc">+</td> 
+       </tr> 
+       <tr> 
+        <td colspan="2" class="calcCtrl">0</td> 
+        <td class="calcCtrl">.</td> 
+        <td class="orangeCalc">=</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </application> 
+    <!--
+                    End Apps
+                --> 
+    <application class="home"> 
+     <table id="apps"> 
+      <tbody> 
+       <tr> 
+        <td><span style="background-image: url(https://cdn.macrumors.com/article-new/2016/04/safari-icon-250x250.jpg); background-size: 100% 100%;" class="appIcon" id="safari" name="Safari"></span></td> 
+        <td><span style="background-image: url(https://is2-ssl.mzstatic.com/image/thumb/Purple127/v4/1f/76/99/1f769906-b3e2-2825-7cc3-15cb97b6d760/mzl.hwvzfnhq.png/1200x630bb.jpg); background-size: 100% 100%;" class="appIcon" id="calc" name="Calculator"></span></td> 
+        <td><span style="background-image: url(https://static1.squarespace.com/static/50eca855e4b0939ae8bb12d9/t/53f64a43e4b054559b275026/1408649817754/); background-size: 100% 100%;" class="appIcon" id="sett" name="Settings"></span></td> 
+        <td><span id="calendar" class="appIcon" style="background:#FFF;" name="Calendar"></span></td> 
+       </tr> 
+       <tr> 
+        <td><span style="background-image: url(https://is4-ssl.mzstatic.com/image/thumb/Purple3/v4/80/59/60/805960bc-6a52-c550-9437-29a3e1cba6ee/mzl.vgdzmdbr.png/1200x630bb.jpg); background-size: 100% 100%;" class="appIcon" id="game" name="Cookie Clicker"></span></td> 
+        <td><span style="background-image: url(https://griderly.neocities.org/app-icon.png); background-size: 100% 100%;" class="appIcon" id="social" name="Griderly"></span></td> 
+        <td><span style="background-image: url(http://media.idownloadblog.com/wp-content/uploads/2013/12/iOS-7-weather-app-icon.png); background-size: 100% 100%;" class="appIcon" id="weather" name="Weather"></span></td> 
+        <td></td> 
+       </tr> 
+       <tr> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+       </tr> 
+       <tr> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+       </tr> 
+       <tr> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+        <td></td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <div id="primaryApps"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Phone_rounded.svg/1024px-Phone_rounded.svg.png" id="phone" class="appIcon"> 
+     </div> 
+    </application> 
+   </div> 
+   <div id="topBarClock">
+     12:00 AM 
+   </div> 
+   <div id="ctrl">
+     ▢ 
+   </div> 
+  </div> 
+  <!--
+        <input type='checkbox' class='ios8-switch ios8-switch-lg' id='checkbox-3'>
+<label for='checkbox-3'>iOS8 switch (large)</label>
+<br>
+<input type='checkbox' class='ios8-switch' id='checkbox-1'>
+<label for='checkbox-1'>iOS8 switch</label>
+<br>
+<input type='checkbox' class='ios8-switch ios8-switch-sm' id='checkbox-2'>
+<label for='checkbox-2'>iOS8 switch (small)</label>
+
+        --> 
+ 
+</body></html>
